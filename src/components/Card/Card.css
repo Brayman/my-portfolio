@@ -1,0 +1,174 @@
+.avatar__header_mini {
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+}
+.page__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 1em;
+}
+.icon-button {
+    border: none;
+    border-radius: 0.6em;
+    background-color: #eeeeee;
+    color: #393939;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.4em 0.5em;
+    cursor: pointer;
+}
+.header__button {
+    margin: 1em;
+}
+.icon-button__back {
+    position: relative;
+    left: 0em;
+    margin: 0 auto 0 0;
+}
+.icon-button__share {
+    color: #5c5fee;
+    margin: 0 0.5em 0 0;
+}
+.icon-button__bookmark {
+    margin: 0 0.5em 0 0;
+}
+.icon-button__more {
+    margin: 0;
+}
+.icon-button__secondary {
+    background-color: #fff;
+    border: 1px solid #cdcbcb;
+}
+
+
+/*      card        */
+
+.card__header {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    justify-content: space-between;
+    color: #393939;
+}
+.header__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em 0 0;
+}
+.header__heading {
+    margin: 0;
+}
+.header__subtitle {
+    font-size: 1em;
+}
+.header__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.raiting__box {
+    font-size: 0.8em;
+    color: #ffc107;
+    background-color: #ffc10733;
+    border-radius: 0.8em;
+    padding: 0.3em 0.5em;
+    white-space: nowrap;
+    cursor: default;
+}
+.icon-button__phone {
+    color: #4caf50;
+    background-color: #4caf5033;
+    margin-left: auto;
+}
+/*      description     */
+
+.desc__container {
+    margin: 1em;
+    color: #393939;
+}
+.desc__title {
+    margin: 0.5em 0;
+}
+.desc__text {
+    margin: 0;
+}
+
+/*      image        */
+
+.card__image {
+    margin: 1em;
+    width: calc(100% - 2em) ;
+    object-fit: cover;
+    height: 10em;
+    border-radius: 0.8em;
+}
+
+/*      utilites        */
+
+.card__utilites {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    color: #393939;
+}
+.item__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #393939;
+    font-size: 1em;
+    margin: 0.2em;
+    padding: 0.5em;
+    background-color: #eeeeee;
+    border-radius: 0.6em;
+}
+.item__icon_secondary {
+    color: #ff5722;
+}
+.item__icon_primary {
+    color: #5c5fee;
+}
+.item__title {
+    font-weight: bold;
+    flex-grow: 1;
+    padding: 0 1em;
+}
+.contacts__list {
+    margin: 1em;
+    color: #393939;
+}
+.contacts__header {
+    margin: 1em 0;
+}
+.contact__button {
+    margin: 0.2em 0;
+    color: #393939;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contacts__buttons {
+    display: flex;
+    flex-direction: column;
+}
+.contact__desc {
+    color: #393939;
+    margin: 0 1em;
+}
+.contact__icon {
+    color: #ff5722;
+}
+.card__footer {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card__button {
+    align-content: center;
+}

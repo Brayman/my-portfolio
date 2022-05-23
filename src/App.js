@@ -1,11 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
+import './components/common.css';
 import SignUp from './components/SignUp/Signup';
+import Card from './components/Card/Card';
 
 function App() {
   return (
     <section>
-      <SignUp/>
+      <Card/>
     </section>
   );
 }
