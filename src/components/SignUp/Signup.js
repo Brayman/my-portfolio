@@ -84,6 +84,7 @@ function SignUp() {
                             id='repeat-password' placeholder='Repeat Password'
                         />
                     </label>
+                    <button className='form__button button button__primary'>Sign up</button>
                 </form>
 
                 <footer className='forms__footer footer'>
