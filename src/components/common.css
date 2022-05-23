@@ -1,0 +1,35 @@
+.input-field {
+    background-color: #eeeeee;
+    cursor: text;
+}
+.input-field__label {
+    color: #5c5fee;
+}
+.input-field__input {
+    border-radius: 0.8em;
+    padding: 0.7em;
+    color: #393939;
+    flex-grow: 1;
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+.input-field__input::placeholder {
+    color: #cdcbcb;
+}
+.input-field__input:active {
+    border: none;
+}
+
+.button_primary {
+    background-color: #5c5fee;
+    border-radius: 0.8em;
+    padding: 1em;
+    border: none;
+    color: #fff;
+}
+.button_secondary {
+    border-radius: 0.8em;
+    padding: 0.7em;
+    border: 1px solid #cdcbcb;
+}

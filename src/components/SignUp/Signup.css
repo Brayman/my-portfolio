@@ -20,7 +20,7 @@
 .header-content {}
 .header-content__title {
     margin: 0;
-    color: #303030;
+    color: #393939;
     font-size: 2em;
     display: flex;
     flex-direction: row;
@@ -104,8 +104,6 @@
 }
 .form__field {
     margin: 0.25em 0;
-    border-radius: 0.8em;
-    padding: 0.7em;
     display: flex;
     flex-direction: row;
 }
@@ -115,40 +113,10 @@
     min-width: 10em;
 }
 
-.button__primary {
-    background-color: #5c5fee;
-    border-radius: 0.8em;
-    padding: 1em;
-    border: none;
-    color: #fff;
-}
-.button__secondary {
-    border-radius: 0.8em;
-    padding: 0.7em;
-    border: 1px solid #cdcbcb;
-}
+
 
 /*          Field        */
-.field {
-    background-color: #f9f9f9;
-    cursor: text;
-}
-.field__label {
-    color: #5c5fee;
-}
-.field__input {
-    color: #303030;
-    flex-grow: 1;
-    border: none;
-    background-color: inherit;
-    outline: none;
-}
-.field__input::placeholder {
-    color: #cdcbcb;
-}
-.field__input:active {
-    border: none;
-}
+
 
 
 

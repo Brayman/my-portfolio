@@ -41,50 +41,50 @@ function SignUp() {
                     <div className='divider__line' />
                 </div>
                 <form className='form form__container'>
-                    <label className='form__field field' htmlFor='email'>
-                        <label className='field__label'>
+                    <label className='form__field input-field' htmlFor='email'>
+                        <label className='input-field__label'>
                             <MdEmail />
                         </label>
                         <input
-                            className='field__input'
+                            className='input-field__input'
                             id='email'
                             placeholder='Email ID'
                         />
                     </label>
-                    <label className='form__field field' htmlFor='password' >
-                        <label className='field__label'>
+                    <label className='form__field input-field' htmlFor='password' >
+                        <label className='input-field__label'>
                             <MdLock />
                         </label>
                         <input
-                            className='field__input'
+                            className='input-field__input'
                             id='password' placeholder='Password'
                         />
                     </label>
-                    <label className='form__field field' htmlFor='name' >
+                    <label className='form__field input-field' htmlFor='name' >
                         <label
-                            className='field__label'
+                            className='input-field__label'
                             htmlFor='name'
                         >
                             <MdEmail />
                         </label>
                         <input
-                            className='field__input'
+                            className='input-field__input'
                             id='name' placeholder='Full name'
                         />
                     </label>
                     <label
-                        className='form__field field'
+                        className='form__field input-field'
                         htmlFor='repeat-password'
                     >
-                        <label className='field__label'>
+                        <label className='input-field__label'>
                             <MdLock />
                         </label>
                         <input
-                            className='field__input'
+                            className='input-field__input'
                             id='repeat-password' placeholder='Repeat Password'
                         />
                     </label>
-                    <button className='form__button button button__primary'>Sign up</button>
+                    <button className='form__button button button_primary'>Sign up</button>
                 </form>
 
                 <footer className='forms__footer footer'>
