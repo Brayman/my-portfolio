@@ -41,7 +41,7 @@ function SignUp() {
                     <div className='divider__line' />
                 </div>
                 <form className='form form__container'>
-                    <label className='form__field input-field' htmlFor='email'>
+                    <label className='form__field input-field input-field__box' htmlFor='email'>
                         <label className='input-field__label'>
                             <MdEmail />
                         </label>
@@ -51,7 +51,7 @@ function SignUp() {
                             placeholder='Email ID'
                         />
                     </label>
-                    <label className='form__field input-field' htmlFor='password' >
+                    <label className='form__field input-field input-field__box' htmlFor='password' >
                         <label className='input-field__label'>
                             <MdLock />
                         </label>
@@ -60,7 +60,7 @@ function SignUp() {
                             id='password' placeholder='Password'
                         />
                     </label>
-                    <label className='form__field input-field' htmlFor='name' >
+                    <label className='form__field input-field input-field__box' htmlFor='name' >
                         <label
                             className='input-field__label'
                             htmlFor='name'
@@ -73,7 +73,7 @@ function SignUp() {
                         />
                     </label>
                     <label
-                        className='form__field input-field'
+                        className='form__field input-field input-field__box'
                         htmlFor='repeat-password'
                     >
                         <label className='input-field__label'>
