@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.app__footer {
+  display: flex;
+  flex-direction: row;
+}
+.footer__link {
+  align-self: center;
+  flex-grow: 1;
+}
