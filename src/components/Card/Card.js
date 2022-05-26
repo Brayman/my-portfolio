@@ -1,5 +1,4 @@
 import "./Card.css";
-import avatar from "../../img/my-avatar.jpg";
 import house_img from "../../img/next-gren.jpg";
 import {
     MdKeyboardArrowLeft,
@@ -170,11 +169,9 @@ function Card() {
                         </button>
                     </div>
                 </section>
-                <footer className="card__footer">
-                    <button className="card__button button button_primary">
-                        Apply to buy
-                    </button>
-                </footer>
+                <button className="card__button button button_primary">
+                    Apply to buy
+                </button>
             </section>
         </section>
     )

@@ -1,8 +1,3 @@
-.avatar__header_mini {
-    height: 3em;
-    width: 3em;
-    object-fit: cover;
-}
 .page__header {
     display: flex;
     flex-direction: row;
@@ -16,7 +11,7 @@
     color: #393939;
     font-size: 1em;
     text-align: center;
-    padding: 0.4em 0.5em;
+    padding: 0.4em 0.6em;
     cursor: pointer;
 }
 .header__button {
@@ -49,6 +44,7 @@
     display: flex;
     flex-direction: row;
     margin: 1em;
+    min-height: 4em;
     justify-content: space-between;
     color: #393939;
 }
@@ -67,15 +63,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.raiting__box {
-    font-size: 0.8em;
-    color: #ffc107;
-    background-color: #ffc10733;
-    border-radius: 0.8em;
-    padding: 0.3em 0.5em;
-    white-space: nowrap;
-    cursor: default;
 }
 .icon-button__phone {
     color: #4caf50;
@@ -99,7 +86,7 @@
 
 .card__image {
     margin: 1em;
-    width: calc(100% - 2em) ;
+    width: calc(100% - 2em);
     object-fit: cover;
     height: 10em;
     border-radius: 0.8em;
@@ -119,7 +106,7 @@
     align-items: center;
     color: #393939;
     font-size: 1em;
-    margin: 0.2em;
+    margin: 0.2em 0;
     padding: 0.5em;
     background-color: #eeeeee;
     border-radius: 0.6em;
@@ -163,12 +150,9 @@
 .contact__icon {
     color: #ff5722;
 }
-.card__footer {
-    margin: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 .card__button {
-    align-content: center;
+    align-content: stretch;
+    width: calc(100% - 2em);
+    margin: 1em;
+    cursor: pointer;
 }
