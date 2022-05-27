@@ -6,12 +6,15 @@ import Card from './components/Card/Card';
 import List from './components/List/List';
 import Signin from './components/Sign/Signin';
 import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
+import CV from './components/CV/CV';
+import data from "./data.json"
 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/' element={<CV user={data.user} />} />
         <Route path='/signin' element={<Signin />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/list' element={<List />} />

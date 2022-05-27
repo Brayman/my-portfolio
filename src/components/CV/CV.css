@@ -1,0 +1,129 @@
+.cv-page {
+    display: flex;
+    flex-direction: row;
+}
+.cv-page__body {
+    flex-grow: 2;
+}
+.cv-page__asside {
+    flex-grow: 1;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+}
+.header__icon {
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0 1em 0 0;
+}
+.asside__block {
+    display: flex;
+    flex-direction: column;
+    background-color: #1d3344;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em;
+}
+.cv-contacts__list {
+    margin: 1em 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.cv-contacts__item {
+    color: #fff;
+}
+.cv-contacts__icon {
+    color: #1d3344;
+    background-color: #fff;
+}
+.skills__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.list__icon-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em 0;
+    cursor: default;
+}
+.icon-item__icon {
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0 1em 0 0;
+}
+.asside-header {
+    color: #fff;
+}
+.asside-header__icon {
+    background-color: #fff;
+    color: #1d3344;
+}
+.skills__item {
+    background-color: #ffffff80;
+    color: #1d3344;
+    padding: 0.5em;
+    margin: 0.5em 0.5em 0.5em 0;
+    border-radius: 0.5em;
+}
+
+.cv-profile__content {
+    margin: 1em;
+}
+.cv-about__block {
+    display: flex;
+    flex-direction: column;
+}
+.cv-about__avatar {
+    border: 0.2em solid #1d3344;
+    border-radius: 1em;
+    padding: 0.2em;
+    object-fit: cover;
+    flex-grow: 1;
+    max-height: 12em;
+    min-height: 5em;
+    min-width: 5em;
+    max-width: 10em;
+}
+.cv-about__header {
+    display: flex;
+    flex-direction: row;
+}
+.cv-about__desc {
+    margin: 0 0 0 1em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+}
+.about-desc__title {
+    margin: 1em 0;
+    font-size: 2em;
+    color: #1d3344
+}
+.about-desc__subtitle {
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: orange;
+}
+.cv-about__text {
+    margin: 0.5em 0;
+}
+
+.content__block {
+    margin: 1em;
+}
+.content__header {
+    margin: 1em 0;
+}
+.content-header__title {
+    margin: 0;
+}
+.content-header__subtitle {
+    margin: 0;
+}
+.content-header__date {
+    color: orange;
+    margin: 0;
+}

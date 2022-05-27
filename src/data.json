@@ -1,0 +1,84 @@
+{
+    "houses": [
+        {
+            "name": "Apartments in ecologically clean area in Batumi",
+            "desc": "Новая квартира • 1 Кровать. • 1 Ванна. • 31.8 м² • 4й этаж"
+        },
+        {
+            "name": "Апартаменты на продажу в Gonio",
+            "desc": "1 Кровать. • 1 Ванна. • 31.22 м² • Верхний этаж •"
+        },
+        {
+            "name": "Polo Villas Grienfield",
+            "desc": "4 комнат(ы) • 3 Кровать. • 2 Ванна. • 204 м²"
+        }
+    ],
+    "user": {
+        "name": "ARTEM RAKITSKIY",
+        "job": "JUNIOR REACT DEVELOPER",
+        "about_me": "I like to study and coding. I'm always interested in learning new things. I love walking the streets listening to music. I like to work with good apps and I want to create the same apps. Like an active lifestyle, but not too much.",
+        "contacts": {
+            "location": "Tbilisi",
+            "phone": "+995591014526",
+            "email": "ar.rakitskiy@gmail.com",
+            "telegram": "@braymen",
+            "linkedin": "www.linkedin.com/in/artem-rakitskiy"
+        },
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Git",
+            "React.js",
+            "Redux.js",
+            "Express.js",
+            "mongoose.js",
+            "MongoDB",
+            "Axios.js",
+            "telegraf.js"
+        ],
+        "work_expirence": [
+            {
+                "date": "Nov 2021 - Jan 2022",
+                "title": "Grafx",
+                "subtitle": "Client: Self-employed",
+                "desc": {
+                    "short": "An application for building work schedules.",
+                    "responsibilities": [
+                        "Web interface development (React, Redux)",
+                        "Create a notification telegram bot (telegraf.js)",
+                        "Creating a server to write data (express.js mongoose.js)",
+                        "Creating an algorithm for creating automatic graphics",
+                        "Application deployment (Heroku)"
+                    ],
+                    "full": "Practiced in designing the architecture of the application, they began to develop the MongoDB Express.js React Redux technology stack. The main part in the development of the project was client's part, so I mainly developed its architecture. On the server side, the main task was to develop a bot. It was written using the telegraf.js package. Carried out the configuration and deployment of the application on the Heroku platform."
+                } 
+            },
+            {
+                "date": "Oct 2020 - Sep 2021",
+                "title": "Astatx",
+                "subtitle": "Client: Self-employed",
+                "desc": {
+                    "short": "An application for recording transfers of funds in foreign currency and collecting statistics on exchange rate traffic.",
+                    "responsibilities": [
+                        "Development of the web interface of the application (React)",
+                        "Development of business logic applications (Redux)",
+                        "Development of the server part for data processing and work with them. (Express.js)",
+                        "Database design (mongoose.js)"
+                    ],
+                    "full": "In the process of developing web applications, I used the React Redux bundle to create the client side. To display the data, I used the Recharts package. Node.js is used for data processing on the server side, namely Express.js, and mongoose.js is used to interact with the database to work with MongoDB. The technology stack was used to hone the skills of writing JavaScript code, the main part was working with the back-end development and architecture."
+                }
+            }
+        ],
+        "course": {
+            "date": "2016 - 2016",
+            "title": "ROLLING SCOPES Front-End course",
+            "subtitle": "ROLLING SCOPES, Brest"
+        },
+        "education": {
+            "date": "2012 - 2016",
+            "title": "Programming development",
+            "subtitle": "College of Business and Law, Brest"
+        }
+    }
+}
