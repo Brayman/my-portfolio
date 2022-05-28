@@ -52,7 +52,7 @@
                         "Application deployment (Heroku)"
                     ],
                     "full": "Practiced in designing the architecture of the application, they began to develop the MongoDB Express.js React Redux technology stack. The main part in the development of the project was client's part, so I mainly developed its architecture. On the server side, the main task was to develop a bot. It was written using the telegraf.js package. Carried out the configuration and deployment of the application on the Heroku platform."
-                } 
+                }
             },
             {
                 "date": "Oct 2020 - Sep 2021",
@@ -70,11 +70,13 @@
                 }
             }
         ],
-        "course": {
-            "date": "2016 - 2016",
-            "title": "ROLLING SCOPES Front-End course",
-            "subtitle": "ROLLING SCOPES, Brest"
-        },
+        "courses": [
+            {
+                "date": "2016 - 2016",
+                "title": "ROLLING SCOPES Front-End course",
+                "subtitle": "ROLLING SCOPES, Brest"
+            }
+        ],
         "education": {
             "date": "2012 - 2016",
             "title": "Programming development",

@@ -3,28 +3,46 @@ import {
     MdContactPage,
     MdEmail,
     MdSmartphone,
-    MdLocationPin
+    MdLocationPin,
+    MdOutlineHistoryEdu
 } from "react-icons/md";
 import avatar from "../../img/my-avatar.jpg";
-import { FaTelegram, FaLinkedin, FaCogs } from "react-icons/fa";
+import {
+    FaTelegram,
+    FaLinkedin,
+    FaCogs,
+    FaBriefcase,
+    FaUserGraduate
+} from "react-icons/fa";
+function Header({ title, subtitle, date }) {
+    return (
+        <header className='content__header'>
+            <h3 className='content-header__title'>
+                {title}
+            </h3>
+            <h4 className='content-header__subtitle'>
+                {subtitle}
+            </h4>
+            <div className='content-header__date'>
+                {date}
+            </div>
+        </header>
+    )
+}
 
 function Content({ items }) {
-    return (
+    if (!Array.isArray(items)) {
+        return (
+            <section className="content__block">
+                <Header {...items} />
+            </section>
+        )
+    } else return (
         <div className='section__items'>
             {items.map((work, i) => {
                 return (
                     <section key={i} className="content__block">
-                        <header className='content__header'>
-                            <h3 className='content-header__title'>
-                                {work.title}
-                            </h3>
-                            <h4 className='content-header__subtitle'>
-                                {work.subtitle}
-                            </h4>
-                            <div className='content-header__date'>
-                                {work.date}
-                            </div>
-                        </header>
+                        <Header {...work} />
                         <section className='content__text'>
                             <p>
                                 {work.desc.short}
@@ -33,7 +51,7 @@ function Content({ items }) {
                             <ul>
 
                                 {work.desc.responsibilities.map((item, i) => {
-                                    return <li>{item}</li>
+                                    return <li key={i}>{item}</li>
                                 })}
                             </ul>
                             <p>
@@ -74,21 +92,27 @@ function CV({ user }) {
                 <section className="section work-section">
                     <header className='section__header'>
                         <div className='section__icon'>
-
+                            <FaBriefcase />
                         </div>
-                        <div className='section__title'></div>
+                        <h2 className='section__title'>
+                            Work Expirence
+                        </h2>
                     </header>
-
+                    <div className='section__items'>
+                        <Content items={user.work_expirence} />
+                    </div>
                 </section>
                 <section className="section education-section">
                     <header className='section__header'>
                         <div className='section__icon'>
-
+                            <FaUserGraduate />
                         </div>
-                        <div className='section__title'></div>
+                        <h2 className='section__title'>
+                            Eeducation
+                        </h2>
                     </header>
                     <div className='section__items'>
-                        <Content items={user.work_expirence} />
+                        <Content items={user.education} />
                     </div>
                 </section>
             </section>
@@ -102,7 +126,7 @@ function CV({ user }) {
                             Contacts
                         </h2>
                     </header>
-                    <section className="cv-contacts__list">
+                    <section className="asside__list cv-contacts__list">
                         <div className="list__icon-item cv-contacts__item">
                             <div className="icon-item__icon cv-contacts__icon">
                                 <MdEmail />
@@ -154,7 +178,7 @@ function CV({ user }) {
                             Skills
                         </h2>
                     </header>
-                    <section className='skills__list'>
+                    <section className='asside__list skills__list'>
                         {user.skills.map((skill, i) => {
                             return (
                                 <div key={i} className='skills__item'>
@@ -165,7 +189,33 @@ function CV({ user }) {
                     </section>
                 </section>
                 <section className="courses asside__block">
-
+                    <header className="header asside-header">
+                        <div className="header__icon asside-header__icon">
+                            <MdOutlineHistoryEdu />
+                        </div>
+                        <h2 className="header__title">
+                            Courses
+                        </h2>
+                    </header>
+                    <section className='asside__list'>
+                        {user.courses.map(course => {
+                            return (
+                                <section key={course.title} className='course'>
+                                    <header className='course__title'>
+                                        {course.title}
+                                    </header>
+                                    <div className='course__subtitle'>
+                                        <div className='course__company'>
+                                            {course.subtitle}
+                                        </div>
+                                        <div className='course__date'>
+                                            {course.date}
+                                        </div>
+                                    </div>
+                                </section>
+                            )
+                        })}
+                    </section>
                 </section>
             </section>
         </section >
