@@ -8,13 +8,15 @@ import Signin from './components/Sign/Signin';
 import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
 import CV from './components/CV/CV';
 import data from "./data.json"
+import Main from './components/Portfolio/portfolio';
 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<CV user={data.user} />} />
+        <Route path='/' element={<Main user={data.user}/>} />
+        <Route path='/CV' element={<CV user={data.user} />} />
         <Route path='/signin' element={<Signin />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/list' element={<List />} />
