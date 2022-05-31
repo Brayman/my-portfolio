@@ -41,10 +41,24 @@ body {
 .p-accordion__header_title {
     border-bottom: 1px solid#607B96;
 }
-.p-accordion__body {
-    min-height: 100%;
-    margin: 0 0 auto 0;
+.p-accordion__arrow {
+    padding: 0.2em 0.5em;
+}
+.p-accordion__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.p-accordion__container {
     border-bottom: 1px solid#607B96;
+}
+.ac-item_open {
+    color: #fff;
+}
+.p-accordion__body {
+    padding: 0;
+    margin: 0 0 0 1em;
+    
 }
 .p-header__item {
     
@@ -60,4 +74,12 @@ body {
 .p-header__item_contact {
     border-left: 1px solid #607B96;
     margin: 0 0 0 auto;
+}
+.p-text {
+    font-size: 1.2em;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #011627;
+    color: #607B96;
 }

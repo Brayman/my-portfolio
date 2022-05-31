@@ -6,6 +6,7 @@ import {
     RiMailFill,
     RiPhoneFill
 } from "react-icons/ri";
+import Accordion, { Item } from "./Accordion/Accordion";
 function Main({ user }) {
     return (
         <section className="p-page">
@@ -13,40 +14,41 @@ function Main({ user }) {
                 <header className="p-menu__header">
                     artem-rakitskiy
                 </header>
-                <section className="p-menu__item p-accordion">
-                    <header className="p-accordion__title">
-                        <RiArrowDownSLine />
-                        <span>
-                            personal-info
-                        </span>
-                    </header>
+                <Accordion prev>
+                    personal-info
+                    <Item>
+                        <Accordion>
+                            <>
+                                <RiFolder3Fill />
+                                <span>bio</span>
+                            </>
+                            <Item>
+                                about_me
+                            </Item>
+                        </Accordion>
+                    </Item>
+                    <Item>
+                        <Accordion>
+                            <>
+                                <RiFolder3Fill />
+                                <span>education</span>
+                            </>
+                            <Item>
+                                about_me
+                            </Item>
+                        </Accordion>
+                    </Item>
 
-                    <div className="p-accordion__item">
-                        <RiFolder3Fill />
-                        <div className="acrd-item__title p-accordion__item">
-                            <RiFolder3Fill />
-                            <span>
-                                bio
-                            </span>
-                        </div>
-                    </div>
-                </section>
-                <section className="p-accordion">
-                    <header className="p-accordion__header p-accordion__header_title">
-                        <RiArrowDownSLine />
-                        <span>
-                            contacts
-                        </span>
-                    </header>
-                    <div className="p-accordion__body">
-                        <div className="p-accordion__item">
-                            <RiMailFill />
-                            <span>
-                                {user.contacts.email}
-                            </span>
-                        </div>
-                    </div>
-                </section>
+                </Accordion>
+                <Accordion prev>
+                    contacts
+                    <Item>
+                        <>
+                            <RiPhoneFill />
+                            {user.contacts.phone}
+                        </>
+                    </Item>
+                </Accordion>
             </section>
             <section className="p-page__main p-main">
                 <header className="p-page__header p-header">
