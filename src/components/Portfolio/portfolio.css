@@ -31,15 +31,21 @@ body {
    
 }
 .p-accordion__header {
-    color: #fff;
     display: flex;
     flex-direction: row;
-    padding: 0.2em 0;
     align-items: center;
     
 }
-.p-accordion__header_title {
+.p-accordion__header_main {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 0.2em ;
+    align-items: center;
     border-bottom: 1px solid#607B96;
+}
+.p-accordion__header_open {
+    color: #fff;
 }
 .p-accordion__arrow {
     padding: 0.2em 0.5em;
@@ -56,8 +62,8 @@ body {
     color: #fff;
 }
 .p-accordion__body {
-    padding: 0;
-    margin: 0 0 0 1em;
+    padding: 0.2em;
+    margin: 0;
     
 }
 .p-header__item {
@@ -82,4 +88,15 @@ body {
     width: 100%;
     background-color: #011627;
     color: #607B96;
+}
+.p-button {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #1c2b3a;
+    color: #fff;
+}
+.p-button:focus,
+.p-button:active,
+.p-button:hover {
+    background-color: #263b50;
 }

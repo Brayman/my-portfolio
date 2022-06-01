@@ -1,0 +1,32 @@
+.p-project__gallary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+.p-gallary__card {
+    margin: 1em auto;
+    max-width: 20em;
+    min-width: 15em;
+}
+.p-card {
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #607B96;
+
+}
+.p-card__preview {
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    height: 8em;
+    object-fit: cover;
+}
+.p-card__desc {
+    margin: 1em;
+}
+.p-card__button {
+    margin: 1em;
+    align-self: flex-end;
+}
